@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F9EFF6;
+}
+
+.container{
+
+    width: 95%;
+    margin: auto;
+}
+
+.header-of-app{
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
+.header-of-app h2{
+    width: 100%;
+    position: static;
+    margin-left: 25px;
+    margin-top: 25px;
+    text-align: left;
+    color: #202020;
+    font-size: 2rem;
+    
+    
+}
+h2 i{
+    padding: 10px;
+}
+
+.user-input{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.user-input input{
+    font:  bold 16px 'Montserrat', sans-serif;
+    width: 80%;
+    outline: none;
+    padding: 8px;
+    box-shadow: none;
+    border: none;
+    background-color: #F9EFF6;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient( to left, transparent 0%, #888b8b 100%);
+    border-image-slice: 1;
+}
+
+.user-input input:focus {
+    background-color: #DBD3D8;
+}
+.user-input button{
+    border: none;
+    border-radius: 25px;
+    padding: 8px;
+    width: 40px;
+    background-color: #F9EFF6;
+    transition: background-color 0.1s ease-in;
+}
+
+.user-input button:active {
+    background-color: #ADA9AC;
+}
+
+.to-do-list{
+    width: 95%;
+    margin: auto;
+}
+.to-do-list ul{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.to-do-item{
+    margin: 15px 0;
+    padding: 8px;
+    width: 60%;
+    height: 45px;
+}
+
+.to-do-item input{
+    margin: 5px;
+}
+.to-do-item span {
+    font: bold 16px 'Montserrat', sans-serif;
+}
+
+.to-do-item button{
+    border: none;
+    border-radius: 25px;
+    padding: 8px;
+    width: 40px;
+    background-color: #F9EFF6;
+    transition: background-color 0.1s ease-in;
+}
+.to-do-item button:active {
+    background-color: #ADA9AC;
+}
+
+input[type=checkbox]:checked + span {
+    text-decoration: line-through;
+   }
+
